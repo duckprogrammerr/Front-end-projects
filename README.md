@@ -15,4 +15,3 @@ It gives you various challenges along with the key concepts for solving them and
 ### Contact Me
 * [Twitter](https://twitter.com/MuhamedAlanazi)
 * [Instagram](https://www.instagram.com/duckprogrammer)
-* [Email](muhammedalanazi69@gmail.com)
