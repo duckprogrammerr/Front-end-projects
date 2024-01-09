@@ -70,7 +70,7 @@ i {
 }
 @media (min-width: 991px) {
   #image-column {
-    display: flex;
+    display: flex!important;
   }
   .container {
     width: 970px;
@@ -263,7 +263,7 @@ header > div {
   line-height: 1.6;
 }
 #image-column {
-  display: flex;
+  display: none;
   position: relative;
   justify-content: flex-end;
   align-items: center;
