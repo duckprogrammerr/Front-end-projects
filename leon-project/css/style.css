@@ -263,7 +263,7 @@ header > div {
   line-height: 1.6;
 }
 #image-column {
-  display: none;
+  display: flex;
   position: relative;
   justify-content: flex-end;
   align-items: center;
