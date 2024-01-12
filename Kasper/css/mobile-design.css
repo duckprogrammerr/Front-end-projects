@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header Start  */
+.header-content::after {
+    left: calc( 0% + 15px);
+    width: calc(100% - 30px);
+    
+}
+.header-content nav .toggle-menu {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+.header-content nav ul {
+    display: none;
+}
+.header-content nav .toggle-menu:hover +   ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000088;
+}
+.header-content ul li a {
+    padding: 20px;
+}
+/* Header End  */
+/* Home Content Start  */
+.pagination-arrows {
+    display: none;
+}
+ .text {
+    justify-content: initial;
+    width: 100%;
+}
+/* Home Content End  */
+/* Service Start */
+.services-list .col .service-item {
+    flex-direction: column;
+    text-align: center;
+}
+/* Service End */
+/* Design Start */
+.design .mobile-image {
+    display: none;
+}
+/* Design End */
+/* Protofolio Start */
+.images-container .post {
+    flex-basis: 100%;
+}
+/* Protofolio End */
+.testimonials .persons-list .person {
+    
+    flex-direction: column;
+    align-items: center;
+}
