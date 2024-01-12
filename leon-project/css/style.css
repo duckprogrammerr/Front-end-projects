@@ -70,7 +70,7 @@ i {
 }
 @media (min-width: 991px) {
   #image-column {
-    display: flex;
+    display: flex!important;
   }
   .container {
     width: 970px;
