@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Qrcode generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="options">
+        <input type="color" id="back-color" name="back-color" value="#ffffff" />
+        <input type="color" id="front-color" name="front-color" value="#000000" />
+        <select id="qr-sizes-dropdown">
+        </select>
+        <input type="text" placeholder="Enter QR Text" id="text" />
+      </div>
+      <div id="qrcode"></div>
+      <div class="services">
+        <a id="download-btn" href="#" download="QR-code">
+          Download <span class="material-symbols-outlined"> download </span>
+        </a>
+        <a id="share-btn" href="#">
+          share
+          <span class="material-symbols-outlined"> share </span>
+        </a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
