@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+:root {
+  --primary-color: #103315;
+  --secondary-color: #f4b021;
+  --background-color: #f4ede5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Header */
+
+header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  height: 100px;
+}
+header .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+header ul li > a,
+header .buttons a:first-child {
+  font-size: 18px;
+  color: #6c6c6c;
+}
+header .buttons a:first-child {
+  margin-right: 10px;
+}
+header ul li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-size: 18px;
+  transition: var(--main-transition);
+}
+#burger-btn {
+  display: none;
+  cursor: pointer;
+  width: 35px;
+  height: 17px;
+}
+#burger-btn span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #000;
+  margin-bottom: 4px;
+}
+#products-other-links {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: 650px;
+  top: 95px;
+  left: 40%;
+  transform: translateX(-40%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+#products-other-links .title {
+  display: none;
+  justify-content: space-between;
+}
+#products-other-links .title h4 {
+  color: #8898aa;
+}
+#products-other-links svg {
+  cursor: pointer;
+}
+#products-other-links .link {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+#products-other-links .link img {
+  width: 30px;
+  height: 30px;
+}
+#products-other-links p {
+  color: #989898;
+}
+.primary-btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+}
+@media screen and (min-width: 1201px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 901px) {
+  #product-li:hover > #products-other-links {
+    pointer-events: all;
+    opacity: 1;
+    z-index: 100;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  header ul li:not(li#product-li) {
+    display: none;
+  }
+  header .buttons {
+    display: none;
+  }
+  li#product-li > a {
+    display: none;
+  }
+  #burger-btn {
+    display: block;
+  }
+  #products-other-links.active {
+    pointer-events: all;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  #products-other-links {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+  }
+  #products-other-links .title {
+    display: flex;
+  }
+}
+/* Landing */
+.landing {
+  position: relative;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vh;
+}
+.landing .main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.landing .main .content {
+    width: min-content;
+}
+.landing .main .content h1 {
+  font-size: 60px;
+    width: fit-content;
+}
+.landing .main .content h1 span {
+  color: var(--secondary-color);
+}
+.landing .main .content p {
+  word-break: break-all;
+}
+.landing .main .content > a {
+  margin: 25px 0;
+}
+.landing .main .content .rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.landing .landing-footer > p {
+  font-size: 17px;
+  color: rgb(108, 108, 108);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.landing .landing-footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+@media screen and (max-width: 1400px) {
+  .landing .main .content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .landing .main > img {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 500px){
+  .landing .main .content {
+    width: initial;
+  }
+    .landing .main .content h1 {
+      font-size: 35px;
+    } 
+}
+
+@media screen and (max-width: 450px){
+    .landing .main .content h1 {
+      font-size: 25px;
+    } 
+}
+
+
